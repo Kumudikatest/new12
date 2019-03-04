@@ -1,0 +1,120 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "d713d6cf-ba91-4bcb-bd07-dc9fe4528454": {
+        "id": "d713d6cf-ba91-4bcb-bd07-dc9fe4528454",
+        "parent": null,
+        "name": "new",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "ca973311-2550-42fe-94b5-c9d04ea1e821"
+        ],
+        "isRemovable": false,
+        "filePath": "new"
+      },
+      "ca973311-2550-42fe-94b5-c9d04ea1e821": {
+        "id": "ca973311-2550-42fe-94b5-c9d04ea1e821",
+        "parent": "d713d6cf-ba91-4bcb-bd07-dc9fe4528454",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "new/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIMyLambdaput",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "testCases": {
+          "9c62adf8-942d-4a1c-86d5-eddeff0e95e6": {
+            "id": "9c62adf8-942d-4a1c-86d5-eddeff0e95e6",
+            "name": "Unnamed event",
+            "functionId": "ca973311-2550-42fe-94b5-c9d04ea1e821",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "d713d6cf-ba91-4bcb-bd07-dc9fe4528454",
+    "openFiles": [
+      "ca973311-2550-42fe-94b5-c9d04ea1e821"
+    ],
+    "currentFileId": "ca973311-2550-42fe-94b5-c9d04ea1e821",
+    "resources": {
+      "apigusEast1TestAPIMyLambdaput": {
+        "name": "apigusEast1TestAPIMyLambdaput",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/MyLambda",
+          "resourceName": "MyLambda",
+          "resourceId": "98nqbj",
+          "restMethod": "PUT",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "t0gymo"
+        },
+        "globallyEditable": false
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "new",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1551685174850
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "new",
+      "url": "https://github.com/Kumudikatest/new12"
+    }
+  }
+}
